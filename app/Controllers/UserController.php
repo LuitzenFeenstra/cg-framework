@@ -56,6 +56,7 @@ class UserController extends Controller
 
         // Save the record to the database
         UserModel::load()->store($user);
+        header("Location: /user");
     }
 
     /**

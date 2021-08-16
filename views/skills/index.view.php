@@ -15,6 +15,9 @@
                     <a class="btn" href="/skills/<?= $skill->id ?>/destroy">delete</a>
                 </div>
             <?php endforeach ?>
+            <div class="col-12">
+                <a class="btn" href="/skills/create">Add Skill</a>
+            </div>
         </div>
     </section>
 

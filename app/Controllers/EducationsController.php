@@ -53,7 +53,7 @@ class EducationsController extends Controller
         $id = Helper::getIdFromUrl('educations');
         $education = EducationModel::load()->get($id);
 
-        return View::render('education/edit.view', [
+        return View::render('educations/edit.view', [
             'method'        => 'POST',
             'action'        => '/educations/' . $id . '/update',
             'education'     => $education,

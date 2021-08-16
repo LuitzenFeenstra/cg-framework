@@ -18,6 +18,9 @@
                     <a class="btn" href="/jobs/<?= $job->id ?>/destroy">delete</a>
                 </div>
             <?php endforeach ?>
+            <div class="col-12">
+                <a class="btn" href="/jobs/create">Add Job</a>
+            </div>
         </div>
     </section>
 

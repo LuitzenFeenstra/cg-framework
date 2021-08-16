@@ -15,6 +15,9 @@
                     <a class="btn" href="/hobbies/<?= $hobby->id ?>/destroy">delete</a>
                 </div>
             <?php endforeach ?>
+            <div class="col-12">
+                <a class="btn" href="/hobbies/create">Add Hobby</a>
+            </div>
         </div>
     </section>
 
