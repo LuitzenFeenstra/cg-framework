@@ -28,7 +28,7 @@ $router->get('user/{id}', 'App/Controllers/UserController.php@show', [
     'read' => Permissions::class
 ]);
 $router->get('user/{id}/edit', 'App/Controllers/UserController.php@edit', [
-    'edit' => Permissions::class
+    'update' => Permissions::class
 ]);
 $router->get('user/create', 'App/Controllers/UserController.php@create');
 $router->post('user/{id}/update', 'App/Controllers/UserController.php@update', [
@@ -47,14 +47,16 @@ $router->get('user/{id}/educations', 'App/Controllers/EducationsController.php@i
     'show' => Permissions::class
 ]);
 
-$router->get('educations/create', 'App/Controllers/EducationsController.php@create');
+$router->get('educations/create', 'App/Controllers/EducationsController.php@create', [
+    'store' => Permissions::class
+]);
 
 $router->post('educations/store', 'App/Controllers/EducationsController.php@store', [
     'store' => Permissions::class
 ]);
 
 $router->get('educations/{id}/edit', 'App/Controllers/EducationsController.php@edit', [
-    'edit' => Permissions::class
+    'update' => Permissions::class
 ]);
 
 $router->post('educations/{id}/update', 'App/Controllers/EducationsController.php@update', [
@@ -71,14 +73,16 @@ $router->get('user/{id}/jobs', 'App/Controllers/JobsController.php@index', [
     'show' => Permissions::class
 ]);
 
-$router->get('jobs/create', 'App/Controllers/JobsController.php@create');
+$router->get('jobs/create', 'App/Controllers/JobsController.php@create', [
+    'store' => Permissions::class
+]);
 
 $router->post('jobs/store', 'App/Controllers/JobsController.php@store', [
     'store' => Permissions::class
 ]);
 
 $router->get('jobs/{id}/edit', 'App/Controllers/JobsController.php@edit', [
-    'edit' => Permissions::class
+    'update' => Permissions::class
 ]);
 
 $router->post('jobs/{id}/update', 'App/Controllers/JobsController.php@update', [
@@ -95,14 +99,16 @@ $router->get('user/{id}/skills', 'App/Controllers/SkillsController.php@index', [
     'show' => Permissions::class
 ]);
 
-$router->get('skills/create', 'App/Controllers/SkillsController.php@create');
+$router->get('skills/create', 'App/Controllers/SkillsController.php@create', [
+    'store' => Permissions::class
+]);
 
 $router->post('skills/store', 'App/Controllers/SkillsController.php@store', [
     'store' => Permissions::class
 ]);
 
 $router->get('skills/{id}/edit', 'App/Controllers/SkillsController.php@edit', [
-    'edit' => Permissions::class
+    'update' => Permissions::class
 ]);
 
 $router->post('skills/{id}/update', 'App/Controllers/SkillsController.php@update', [
@@ -119,14 +125,16 @@ $router->get('user/{id}/hobbies', 'App/Controllers/HobbiesController.php@index',
     'show' => Permissions::class
 ]);
 
-$router->get('hobbies/create', 'App/Controllers/HobbiesController.php@create');
+$router->get('hobbies/create', 'App/Controllers/HobbiesController.php@create', [
+    'store' => Permissions::class
+]);
 
 $router->post('hobbies/store', 'App/Controllers/HobbiesController.php@store', [
     'store' => Permissions::class
 ]);
 
 $router->get('hobbies/{id}/edit', 'App/Controllers/HobbiesController.php@edit', [
-    'edit' => Permissions::class
+    'update' => Permissions::class
 ]);
 
 $router->post('hobbies/{id}/update', 'App/Controllers/HobbiesController.php@update', [

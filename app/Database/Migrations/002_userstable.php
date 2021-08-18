@@ -37,9 +37,9 @@ return [
         'type' => 'array',
         'data' => array(
             [
-                'first_name' => 'Toby',
-                'last_name'  => 'Versteeg',
-                'email'      => 'toby@codegorilla.nl',
+                'first_name' => 'Donald',
+                'last_name'  => 'Duck',
+                'email'      => 'dd@codegorilla.nl',
                 'password'   => password_hash('Gorilla1!', PASSWORD_DEFAULT),
                 'role'       => 1,
                 'country'    => 150,
